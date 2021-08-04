@@ -1,0 +1,38 @@
+{
+    "name": "ropi/cardinality-estimation",
+    "type": "library",
+    "description": "Cardinality estimation",
+    "keywords": [
+        "cardinality",
+        "estimation",
+        "estimator",
+        "hyperloglog"
+    ],
+    "homepage": "https://www.robertpiplica.de",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Piplica",
+            "email": "mail@robertpiplica.de"
+        }
+    ],
+    "require": {
+        "ext-bcmath": "*",
+        "ext-mbstring": "*",
+        "ext-fileinfo": "*",
+        "php": ">=8.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ropi\\CardinalityEstimation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ropi\\CardinalityEstimation\\Tests\\": "tests/"
+        }
+    }
+}
