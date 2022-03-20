@@ -114,9 +114,9 @@ class HyperLogLogCardinalityEstimator implements CardinalityEstimatorInterface
         $hashString = hash($this->getHashAlgorithm(), $data);
         if (!is_string($hashString)) {
             throw new \RuntimeException(
-                'Failed to calculate hash with algorithm "'
+                'Failed to calculate hash with algorithm \''
                 . $this->getHashAlgorithm()
-                . '".',
+                . '\'.',
                 1618833849
             );
         }
