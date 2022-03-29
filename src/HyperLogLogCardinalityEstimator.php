@@ -13,8 +13,7 @@ class HyperLogLogCardinalityEstimator implements CardinalityEstimatorInterface
     protected int $accuracyComplement;
     protected int $valueBitMask;
 
-    // TODO: Change to murmurhash3  if php 8.1 is available
-    public function __construct(int $accuracy = 14, string $hashAlgorithm = 'fnv1a64')
+    public function __construct(int $accuracy = 14, string $hashAlgorithm = 'murmur3a')
     {
         if ($accuracy < 4 || $accuracy > 16) {
             throw new \InvalidArgumentException('Argument $accuracy must be a value between 4 and 16');

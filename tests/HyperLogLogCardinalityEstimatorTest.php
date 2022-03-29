@@ -30,7 +30,7 @@ class HyperLogLogCardinalityEstimatorTest extends TestCase
             $estimator->addValue((string) $i);
         }
 
-        $this->assertEquals(549, $estimator->estimate());
+        $this->assertEquals(558, $estimator->estimate());
     }
 
     public function testEstimation100020()
@@ -42,7 +42,7 @@ class HyperLogLogCardinalityEstimatorTest extends TestCase
             $estimator->addValue((string) $i);
         }
 
-        $this->assertEquals(99602, $estimator->estimate());
+        $this->assertEquals(101118, $estimator->estimate());
     }
 
     public function testEstimation1000020()
@@ -54,7 +54,7 @@ class HyperLogLogCardinalityEstimatorTest extends TestCase
             $estimator->addValue((string) $i);
         }
 
-        $this->assertEquals(999782, $estimator->estimate());
+        $this->assertEquals(995265, $estimator->estimate());
     }
 
     public function testEstimation10000532()
@@ -65,6 +65,6 @@ class HyperLogLogCardinalityEstimatorTest extends TestCase
             $estimator->addValue((string) $i);
         }
 
-        $this->assertEquals(10069355, $estimator->estimate());
+        $this->assertEquals(10037546, $estimator->estimate());
     }
 }
