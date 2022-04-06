@@ -24,5 +24,5 @@ for ($i = 0; $i < 1000020; $i++) {
     $estimator->addValue((string) $i);
 }
 
-$estimator->estimate(); // Returns 999782 as approximated value
+$estimator->estimate(); // Returns 995265 as approximated value
 ```
