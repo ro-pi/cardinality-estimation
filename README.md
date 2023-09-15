@@ -7,7 +7,7 @@ Following cardinality estimators are implemented:
 * Exact (exact cardinality estimation but very high memory usage)
   
 ### Requirements
-* PHP ^8.0
+* PHP ^8.1
 ## Installation
 The library can be installed from a command line interface by using [composer](https://getcomposer.org/).
 
@@ -24,5 +24,5 @@ for ($i = 0; $i < 1000020; $i++) {
     $estimator->addValue((string) $i);
 }
 
-$estimator->estimate(); // Returns 999782 as approximated value
+$estimator->estimate(); // Returns 995265 as approximated value
 ```
